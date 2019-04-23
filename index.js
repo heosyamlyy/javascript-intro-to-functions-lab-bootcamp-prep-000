@@ -77,11 +77,11 @@ describe('sayHiToGrandma(string)', function() {
 */
 
 function sayHiToGrandma(input) {
-  if (input.isLowerCase()) {
+  if (input === input.toLowerCase()) {
     return "I can't hear you!"
-  } else if (input.isUpperCase()) {
+  } else if (input === input.toUpperCase()) {
     return "YES INDEED!"
-  } else if (input.equal("I love you, Grandma.")){
+  } else if (input === "I love you, Grandma.")s{
     return "I love you, too."
   }
   
